@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #reading the dataset and making the list
-ds=pd.read_csv("/home/spider/WORK/DATA/train.csv")
-ts=pd.read_csv("/home/spider/WORK/DATA/test.csv")
+ds=pd.read_csv("train.csv")
+ts=pd.read_csv("test.csv")
 ds[np.isnan(ds)]=0
 x_list=list(ds['x'][:100])
 y_list=list(ds['y'][:100])
